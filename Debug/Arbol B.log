@@ -1,0 +1,24 @@
+﻿Compilación iniciada a las 21/07/2020 05:59:37 p. m..
+El nivel de detalle de registro está establecido en Normal.     1>Proyecto "C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Arbol B.vcxproj" en el nodo 2 (Build destinos).
+     1>InitializeBuildStatus:
+         Se creará "Debug\Arbol B.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+       ClCompile:
+         Todas las salidas están actualizadas.
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"../Headers/Precom.h" /Fp"Debug\Arbol B.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Source\Main.cpp
+         Main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Estudio coursera\Arbol B templates\Arbol B\Debug\Arbol B.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Estudio coursera\Arbol B templates\Arbol B\Debug\Arbol B.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Estudio coursera\Arbol B templates\Arbol B\Debug\Arbol B.lib" /MACHINE:X86 Debug\ArbolB.obj
+         Debug\Main.obj
+         Debug\Precom.obj
+         Debug\PrivadasFun.obj
+         Arbol B.vcxproj -> C:\Estudio coursera\Arbol B templates\Arbol B\Debug\Arbol B.exe
+       FinalizeBuildStatus:
+         Se eliminará el archivo "Debug\Arbol B.tlog\unsuccessfulbuild".
+         Aplicando tarea Touch a "Debug\Arbol B.tlog\Arbol B.lastbuildstate".
+     1>Compilación del proyecto terminada "C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Arbol B.vcxproj" (Build destinos).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.25
