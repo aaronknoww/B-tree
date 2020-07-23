@@ -186,6 +186,20 @@ bool ArbolB<KY, DT>::_revisarCorregirNodo(NodoB*& nodo, KY key, DT dato)//??????
 			izqnod->key[i] = 0;
 			izqnod->dato[i] = 0;
 		}
+
+		// Organiza los hijos de los nodos.
+		for (int i = pivote + 1; i < grado + 1; i++)
+		{
+			derchonod->hijos[i - (pivote + 1)] = izqnod->hijos[i];// Hace que los punteros de derecho apunten a los nodos hijos de izq.
+			
+			if((derchonod->hijos[i - (pivote + 1)])!=nullptr) 
+				derchonod->num_hijos++;	//cuenta los hijos del nodo derecho	
+			
+			if ((izqnod->hijos[i - (pivote + 1)]) != nullptr) // Empieza en la posision cero del arreglo.
+				izqnod->num_hijos++;	//cuenta los hijos del nodo izquierdo	
+			izqnod->hijos[i] = nullptr;//Deja de apuntar al nodo recien copiado.
+		}
+		
 		
 		
 		//--------- CORRIGE EL ARBOL DEPENDINDO SI HAY O NO ESPACIO EN EL NODO PADRE----------\
@@ -255,7 +269,16 @@ bool ArbolB<KY, DT>::_revisarCorregirNodo(NodoB*& nodo, KY key, DT dato)//??????
 
 			return true;
 		}
+		else
+		{
+			for (int i = grado; i > badindex; i--)// Para recorrer los punteros a la derecha y poder conectar los hijos nuevos.
+				nodo->hijos[i] = nodo->hijos[i - 1];
+			nodo->hijos[badindex + 1] = derchonod;// Se conecta el hijo derecho creado en lineas anteriores.
+			_insertarEnOrden(nodo, keyUp, datoUp);
 
+			return false;
+
+		}
 			
 		
 		return true;

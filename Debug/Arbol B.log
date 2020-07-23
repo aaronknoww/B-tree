@@ -1,4 +1,4 @@
-﻿Compilación iniciada a las 21/07/2020 05:59:37 p. m..
+﻿Compilación iniciada a las 21/07/2020 07:43:14 p. m..
 El nivel de detalle de registro está establecido en Normal.     1>Proyecto "C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Arbol B.vcxproj" en el nodo 2 (Build destinos).
      1>InitializeBuildStatus:
          Se creará "Debug\Arbol B.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
@@ -21,4 +21,4 @@ Compilación correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:00.25
+Tiempo transcurrido 00:00:00.37

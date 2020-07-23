@@ -19,9 +19,12 @@ int main()
 	btree.insertar(35, 35.509834);
 	btree.insertar(55, 35.509834);
 	
+	btree.insertar(60, 65.509834);
 	//btree.insertar(60, 65.509834);
-	btree.insertar(15, 15.509834);
-	btree.insertar(15, 15.509834);
+
+	btree.insertar(5, 15.509834);
+	btree.insertar(25, 25.509834);
+	btree.insertar(25, 25.509834);
 
 
 
