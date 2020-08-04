@@ -9,22 +9,30 @@ int main()
 {
 	ArbolB<int, double> btree;
 
-	btree.insertar(10, 5.09834);
-	btree.insertar(20, 25.09834);
-	btree.insertar(30, 51.09834);
-	btree.insertar(40, 84.09834);
-	btree.insertar(1, 194.09834);
-
-	btree.insertar(50, 50.509834);
-	btree.insertar(35, 35.509834);
-	btree.insertar(55, 35.509834);
 	
-	btree.insertar(60, 65.509834);
-	//btree.insertar(60, 65.509834);
+	btree.insertar(10, 51.09834);
+	btree.insertar(13, 84.09834);
+	btree.insertar(15, 194.09834);
+	btree.insertar(17, 194.09834);
+	
+	btree.insertar(21, 194.09834);
+	
+	btree.insertar(14, 14.09834);
 
-	btree.insertar(5, 15.509834);
-	btree.insertar(25, 25.509834);
-	btree.insertar(25, 25.509834);
+	
+	btree.eliminar(21);// hay error debo de seguir depurando esta funcion.
+
+	//??? PROBAR ELIMINAR EN HOJA CUANDO NECESITA PEDIR PRESTADO
+	//?? PARA ESTO DEBO DE INGRESAR MAS ELMENTOS
+	btree.eliminar(25);
+	
+	
+
+
+
+	//btree.insertar(5, 15.509834);
+	//btree.insertar(25, 25.509834);
+	//btree.insertar(25, 25.509834);
 
 
 
