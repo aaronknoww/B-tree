@@ -52,6 +52,8 @@ private:
 	int _buscarIndex(NodoB*&, KY);
 	bool _eliminarClave(NodoB*& , KY);
 	bool _revisarCorregirHijo(NodoB*&, int);// Revisa cuando se borra una clave del arbol
-	bool _pedirClave(NodoB*&, int);
+	bool _pedirClave(NodoB*&, int);// Verifica si los hermanos del nodo en problema pueden darle una clave y se la asigna
+	bool _fusionar(NodoB*&, int);// Fusiona 2 nodos hermanos mas una clave del nodo padre.
+	void _buscaRemplazo(NodoB*&, KY&, DT&); // Busca la clave mas a la derecha del hijo IZQUIERDO.
 //	void _imprimirAux(NodoB*&, int);
 };
