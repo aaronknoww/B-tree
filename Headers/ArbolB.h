@@ -1,3 +1,5 @@
+
+//By Aaron Knoww
 #pragma once
 
 #define grado 5 // Es la maxima cantidad de hijos (punteros) que puede tener un arbol.
@@ -12,6 +14,7 @@ public:
 	ArbolB();
 	void insertar(KY, DT);
 	bool eliminar(KY);
+	bool buscar(KY);
 	//void imprimir();
 	//~ArbolB();
 private:
@@ -55,5 +58,6 @@ private:
 	bool _pedirClave(NodoB*&, int);// Verifica si los hermanos del nodo en problema pueden darle una clave y se la asigna
 	bool _fusionar(NodoB*&, int);// Fusiona 2 nodos hermanos mas una clave del nodo padre.
 	void _buscaRemplazo(NodoB*&, KY&, DT&); // Busca la clave mas a la derecha del hijo IZQUIERDO.
+	bool _buscarAux(NodoB*&, KY);
 //	void _imprimirAux(NodoB*&, int);
 };

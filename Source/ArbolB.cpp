@@ -1,6 +1,9 @@
 #include "../Headers/Precom.h"
 #include "../Headers/ArbolB.h"
 
+//By Aaron Knoww
+
+
 template<typename KY, typename DT>
 ArbolB<KY, DT>::ArbolB()
 {
@@ -23,6 +26,12 @@ bool ArbolB<KY, DT>::eliminar(KY key)
 		return _eliminarAux(p_raiz, key);
 	else
 		return false;
+}
+
+template<typename KY, typename DT>
+bool ArbolB<KY, DT>::buscar(KY clave)
+{
+	return _buscarAux(p_raiz, clave);
 }
 
 

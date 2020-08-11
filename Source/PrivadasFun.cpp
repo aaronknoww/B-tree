@@ -1,6 +1,9 @@
 #include "..\Headers\Precom.h"
 #include "..\Headers\ArbolB.h"
 
+//By Aaron Knoww
+
+
 //---- FUNCIONES PARA INSERTAR Y MANTENER EL PROPIEDADES DEL ARBOL B ----- \\
 
 
@@ -710,6 +713,21 @@ void ArbolB<KY, DT>::_buscaRemplazo(NodoB*& nodo, KY& clave, DT& dato)// Busca l
 	}
 	return;
 
+}
+
+template<typename KY, typename DT>
+bool ArbolB<KY, DT>::_buscarAux(NodoB*& nodo, KY clave)
+{// Recibe la raiz del arbol
+
+	int index = _buscarIndex(nodo, clave);
+	
+	if (clave == nodo->key[index])// Compara la clave a buscar con la clave que se encuentra almacenada en la posision en el arreglo donde pueda estar.
+		return true;// se encontro la clave
+	else if (nodo->num_hijos == 0)// Si no tiene hijos ya no hay mas donde buscar
+		return false;// la clave no existe
+	else
+		return _buscarAux(nodo->hijos[index], clave);
+	
 }
 
 //template<typename KY, typename DT>

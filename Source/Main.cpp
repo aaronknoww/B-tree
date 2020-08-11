@@ -3,6 +3,9 @@
 #include "../Source/ArbolB.cpp"
 #include "../Source/PrivadasFun.cpp"
 
+//By Aaron Knoww
+
+
 using namespace std;
 
 int main()
@@ -41,6 +44,27 @@ int main()
 	
 	//---- Fin de la creacion del arbol B
 
+	if (btree.buscar(21))
+		cout << "\nSi se encontro el elmento 21 " << endl;
+	else
+		cout << "\nValiste merga" << endl;
+
+	system("pause > null");
+
+	if (btree.buscar(13))
+		cout << "\nSi se encontro el elmento 13 " << endl;
+	else
+		cout << "\nValiste merga" << endl;
+	
+	system("pause > null");
+
+	if (btree.buscar(200))
+		cout << "\nSi se encontro el elmento 200 " << endl;
+	else
+		cout << "\nValiste merga el numer 200 no existe" << endl;
+	system("pause > null");
+
+
 	btree.eliminar(25);// Deja solo la raiz con claves llenas e hijos llenos tambien.
 
 	btree.eliminar(10);//bien
@@ -54,8 +78,12 @@ int main()
 	btree.eliminar(28);//bien
 	btree.eliminar(06);//bien
 	btree.eliminar(17);//bien
-	btree.eliminar(40);// bien si se borra la raiz 14, bien si se borra en el hijo izquierdo 2, bien si se borra en el hijo derecho. 
-	btree.eliminar(14);
+	btree.eliminar(14);// bien si se borra la raiz 14, bien si se borra en el hijo izquierdo 2, bien si se borra en el hijo derecho. 
+	btree.eliminar(2);
+	btree.eliminar(3);
+	btree.eliminar(30);
+	btree.eliminar(40);
+	btree.eliminar(40);
 
 
 
@@ -92,7 +120,7 @@ int main()
 	btree.insertar(31, 81.09834);
 	btree.insertar(32, 41.09834);*/
 
-	cout << "\nhello mother fuckers" << endl;
+	cout << "\nhello mother fuckers, Aaron Knoww was here" << endl;
 	system("pause > null");
 	
 	return 0;
