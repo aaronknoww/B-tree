@@ -41,10 +41,21 @@ int main()
 	
 	//---- Fin de la creacion del arbol B
 
-	btree.eliminar(25);// ***??? problemas al eliminar 25  sab 08/08/20
+	btree.eliminar(25);// Deja solo la raiz con claves llenas e hijos llenos tambien.
 
-	btree.eliminar(10);
-	btree.eliminar(10);
+	btree.eliminar(10);//bien
+	btree.eliminar(5);//bien
+	btree.eliminar(35);//bien
+	btree.eliminar(21);//bien
+	btree.eliminar(27);//bien
+	btree.eliminar(13);//bien
+	btree.eliminar(7);//bien
+	btree.eliminar(15);//bien
+	btree.eliminar(28);//bien
+	btree.eliminar(06);//bien
+	btree.eliminar(17);//bien
+	btree.eliminar(40);// bien si se borra la raiz 14, bien si se borra en el hijo izquierdo 2, bien si se borra en el hijo derecho. 
+	btree.eliminar(14);
 
 
 

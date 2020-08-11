@@ -349,6 +349,8 @@ bool ArbolB<KY, DT>::_eliminarAux(NodoB*& nodo, KY clave)// Solo se llama esta f
 		if (nodo->key[index] == clave && (p_raiz == nodo)) //RAIZ CON HIJOS
 		{
 			// Se encontro el elmento en la RAIZ con hijos
+			_buscaRemplazo(nodo->hijos[index], nodo->key[index], nodo->dato[index]);
+			_revisarCorregirHijo(nodo, index);
 			return true;
 		}
 		else if (nodo->key[index] > clave && (nodo->num_hijos > 0)) // Baja el hijo izquierdo
@@ -529,26 +531,22 @@ bool ArbolB<KY, DT>::_pedirClave(NodoB*& padre, int index)
 	}
 	else if ((index<(grado-1)) && (padre->hijos[der]->num_claves > minimo))//El hermano derecho entrega la clave
 	{
-		if ((padre->num_claves < 2) || (padre->num_claves >= grado - 1))
-			der--;// En el caso de estar despues de la ultima clave del arreglo, se regresa una posision.
+		//if ((padre->num_claves < minimo) || (padre->num_claves >= grado - 1))
+			//der--;// En el caso de estar despues de la ultima clave del arreglo, se regresa una posision.
 				
-		_insertarEnOrden(padre->hijos[index], padre->key[der], padre->dato[der]); // Inserta la clave que va a bajar del padre.
+		_insertarEnOrden(padre->hijos[index], padre->key[index], padre->dato[index]); // Inserta la clave que va a bajar del padre al hijo que la necesita.
 		
-		padre->key[der] = padre->hijos[index+1]->key[0];// Sube la clave mas a la izquierda del hijo derecho.
-		padre->dato[der] = padre->hijos[index+1]->dato[0];// Sube el dato mas a la izquierda del hijo derecho.
+		padre->key[index] = padre->hijos[der]->key[0];// Sube la clave mas a la izquierda del hijo derecho.
+		padre->dato[index] = padre->hijos[der]->dato[0];// Sube el dato mas a la izquierda del hijo derecho.
 		
 		padre->hijos[index]->hijos[padre->hijos[index]->num_claves - 1] = padre->hijos[index+1]->hijos[0]; //Copia el hijo mas a la izquierda del hermano derecho.
 
-		padre->hijos[index+1]->num_claves--; //Resta una clave al hijo derecho con esto se elimina la clave
-		
-			// Recorre los elmentos del hijo derecho una posision a la izquierda
-		for (int i = 0; i < (padre->hijos[index+1]->num_claves); i++)
-		{
-			padre->hijos[index + 1]->key[i] = padre->hijos[index + 1]->key[i + 1];
-			padre->hijos[index + 1]->dato[i] = padre->hijos[index + 1]->dato[i + 1];
+		_eliminarClave(padre->hijos[der], padre->hijos[der]->key[0]); // elimina la clave mas a la izquierda del hijo derecho
+				
+			// Recorre los hijos del hijo derecho una posision a la izquierda
+		for (int i = 0; i < (padre->hijos[der]->num_hijos); i++)
 			padre->hijos[index + 1]->hijos[i] = padre->hijos[index + 1]->hijos[i + 1];
-		}
-
+		
 		return true;
 	}
 	else
@@ -565,7 +563,7 @@ bool ArbolB<KY, DT>::_fusionar(NodoB*& padre, int index)
 	
 	NodoB* hijo_mal = padre->hijos[index];// Es la hoja o nodo que no tiene suficientes claves
 
-	if ((padre->num_hijos) < grado && (index < padre->num_claves))// Verifica que exista hermano derecho de la hoja en problemas, siempre debe de haber grado-1 hijos
+	if (index < padre->num_claves)// Verifica que exista hermano derecho de la hoja en problemas, siempre debe de haber grado-1 hijos
 	{
 		// Todas las claves e hijos se van a asignar al hermano derecho ademas de borrarlas de su origen. IZQ->DER
 		
@@ -607,7 +605,7 @@ bool ArbolB<KY, DT>::_fusionar(NodoB*& padre, int index)
 
 		if (padre->num_claves >= minimo)
 			return true;
-		else if (padre == p_raiz)// Se encuentra en la raiz
+		else if (padre == p_raiz && padre->num_claves<1)// Se encuentra en la raiz ya no tiene claves
 		{
 			// Copia todos los datos del hijo derecho al padre para poder borrar al hijo y el padre se quede como la raiz.
 			for (int i = 0; i < (hijo_der->num_claves); i++)
@@ -659,7 +657,7 @@ bool ArbolB<KY, DT>::_fusionar(NodoB*& padre, int index)
 		//---------------------------------------------------------
 		if (padre->num_claves >= minimo)// Verifica que hayan suficientes claves para mantener las propiedades de arbol.
 			return true;
-		else if (padre == p_raiz)// Se encuentra en la raiz
+		else if (padre == p_raiz && padre->num_claves < 1)// Se encuentra en la raiz
 		{
 			// Copia todos los datos del hijo derecho al padre para poder borrar al hijo y el padre se quede como la raiz.
 			for (int i = 0; i < (hijo_izq->num_claves); i++)

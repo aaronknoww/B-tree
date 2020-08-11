@@ -1,16 +1,14 @@
-﻿Compilación iniciada a las 10/08/2020 05:10:22 p. m..
-El nivel de detalle de registro está establecido en Normal.     1>Proyecto "C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Arbol B.vcxproj" en el nodo 2 (Rebuild destinos).
+﻿Compilación iniciada a las 10/08/2020 06:59:36 p. m..
+El nivel de detalle de registro está establecido en Normal.     1>Proyecto "C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Arbol B.vcxproj" en el nodo 2 (Build destinos).
      1>InitializeBuildStatus:
-         Aplicando tarea Touch a "Debug\Arbol B.tlog\unsuccessfulbuild".
+         Se creará "Debug\Arbol B.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"../Headers/Precom.h" /Fp"Debug\Arbol B.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Source\Precom.cpp
-         Precom.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"../Headers/Precom.h" /Fp"Debug\Arbol B.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Source\ArbolB.cpp Source\Main.cpp Source\PrivadasFun.cpp
-         ArbolB.cpp
+         Todas las salidas están actualizadas.
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"../Headers/Precom.h" /Fp"Debug\Arbol B.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Source\Main.cpp
          Main.cpp
-     1>C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(472,13): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(470): message : al compilar la función del miembro clase plantilla "bool ArbolB<int,double>::_revisarCorregirHijo(ArbolB<int,double>::NodoB *&,int)"
-       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(364): message : Vea la referencia a la creación de una instancia de la función plantilla "bool ArbolB<int,double>::_revisarCorregirHijo(ArbolB<int,double>::NodoB *&,int)" que se está compilando
+     1>C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(474,13): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(472): message : al compilar la función del miembro clase plantilla "bool ArbolB<int,double>::_revisarCorregirHijo(ArbolB<int,double>::NodoB *&,int)"
+       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(353): message : Vea la referencia a la creación de una instancia de la función plantilla "bool ArbolB<int,double>::_revisarCorregirHijo(ArbolB<int,double>::NodoB *&,int)" que se está compilando
        C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(9): message : al compilar la función del miembro clase plantilla "bool ArbolB<int,double>::_insetarAux(ArbolB<int,double>::NodoB *&,KY,DT)"
                  with
                  [
@@ -26,9 +24,9 @@ El nivel de detalle de registro está establecido en Normal.     1>Proyecto "C:\
        C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\ArbolB.cpp(6): message : al compilar la función del miembro clase plantilla "ArbolB<int,double>::ArbolB(void)"
        C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\Main.cpp(10): message : Vea la referencia a la creación de una instancia de la función plantilla "ArbolB<int,double>::ArbolB(void)" que se está compilando
        C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\Main.cpp(10): message : Vea la referencia a la creación de una instancia de clase plantilla "ArbolB<int,double>" que se está compilando
-     1>C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(506,13): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(491): message : al compilar la función del miembro clase plantilla "bool ArbolB<int,double>::_pedirClave(ArbolB<int,double>::NodoB *&,int)"
-       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(478): message : Vea la referencia a la creación de una instancia de la función plantilla "bool ArbolB<int,double>::_pedirClave(ArbolB<int,double>::NodoB *&,int)" que se está compilando
+     1>C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(508,13): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(493): message : al compilar la función del miembro clase plantilla "bool ArbolB<int,double>::_pedirClave(ArbolB<int,double>::NodoB *&,int)"
+       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(480): message : Vea la referencia a la creación de una instancia de la función plantilla "bool ArbolB<int,double>::_pedirClave(ArbolB<int,double>::NodoB *&,int)" que se está compilando
        C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(48): message : al compilar la función del miembro clase plantilla "bool ArbolB<int,double>::_insertarEnOrden(ArbolB<int,double>::NodoB *&,KY,DT)"
                  with
                  [
@@ -41,12 +39,10 @@ El nivel de detalle de registro está establecido en Normal.     1>Proyecto "C:\
                      KY=int,
                      DT=double
                  ]
-     1>C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(606,14): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(564): message : al compilar la función del miembro clase plantilla "bool ArbolB<int,double>::_fusionar(ArbolB<int,double>::NodoB *&,int)"
-       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(482): message : Vea la referencia a la creación de una instancia de la función plantilla "bool ArbolB<int,double>::_fusionar(ArbolB<int,double>::NodoB *&,int)" que se está compilando
-     1>C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(657,14): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-         PrivadasFun.cpp
-         Generando código...
+     1>C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(604,14): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(562): message : al compilar la función del miembro clase plantilla "bool ArbolB<int,double>::_fusionar(ArbolB<int,double>::NodoB *&,int)"
+       C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(484): message : Vea la referencia a la creación de una instancia de la función plantilla "bool ArbolB<int,double>::_fusionar(ArbolB<int,double>::NodoB *&,int)" que se está compilando
+     1>C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(655,14): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Estudio coursera\Arbol B templates\Arbol B\Debug\Arbol B.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Estudio coursera\Arbol B templates\Arbol B\Debug\Arbol B.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Estudio coursera\Arbol B templates\Arbol B\Debug\Arbol B.lib" /MACHINE:X86 Debug\ArbolB.obj
          Debug\Main.obj
@@ -56,18 +52,18 @@ El nivel de detalle de registro está establecido en Normal.     1>Proyecto "C:\
        FinalizeBuildStatus:
          Se eliminará el archivo "Debug\Arbol B.tlog\unsuccessfulbuild".
          Aplicando tarea Touch a "Debug\Arbol B.tlog\Arbol B.lastbuildstate".
-     1>Compilación del proyecto terminada "C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Arbol B.vcxproj" (Rebuild destinos).
+     1>Compilación del proyecto terminada "C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Arbol B.vcxproj" (Build destinos).
 
 Compilación correcta.
 
-       "C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Arbol B.vcxproj" (Rebuild destino) (1) ->
+       "C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Arbol B.vcxproj" (Build destino) (1) ->
        (ClCompile destino) -> 
-         C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(472,13): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-         C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(506,13): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-         C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(606,14): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-         C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(657,14): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+         C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(474,13): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+         C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(508,13): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+         C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(604,14): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+         C:\Estudio coursera\Arbol B templates\Arbol B\Arbol B\Source\PrivadasFun.cpp(655,14): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
 
     4 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:01.42
+Tiempo transcurrido 00:00:00.41
